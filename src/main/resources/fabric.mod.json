@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "moomeadows",
+	"version": "${version}",
+	"name": "MooMeadows",
+	"description": "Adds some flowery cows inspired by the moobloom and moolip mobs from minecraft earth",
+	"authors": [
+		"Genesis"
+	],
+	"contact": {
+		"homepage": "https://genesishacks.com",
+		"sources": ""
+	},
+	"license": "MIT",
+	"icon": "assets/moomeadows/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.genesis.mmInit"
+		],
+		"client": ["net.genesis.mmInitClient"]
+	},
+	"mixins": [
+		"moomeadows.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.13",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
